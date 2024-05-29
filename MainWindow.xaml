@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ManagingTasksCategoriesBugrina"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        FontFamily="Arial" Height="450" Width="800" MinHeight="450" MinWidth="800" Icon="/Images/задачи.png">
     <Grid>
-
+        <Grid VerticalAlignment="Top" Height="50" Background="White">
+            <Grid.Effect>
+                <DropShadowEffect Direction="270" BlurRadius="5" ShadowDepth="2" Opacity="0.5"/>
+            </Grid.Effect>
+            <Label Content="Управление задачами и категориями" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15pt"/>
+            <Button Command="{Binding OpenTasks}" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">
+                <Image Source="/Images/задачи.png"/>
+            </Button>
+            <Button Command="{Binding OpenCategorys}" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,10,0,0">
+                <Image Source="/Images/категории.png"/>
+            </Button>
+        </Grid>
+        <Frame x:Name="frame" NavigationUIVisibility="Hidden" Margin="5,55,5,5" Background="#FFFAFAFA"/>
     </Grid>
 </Window>
