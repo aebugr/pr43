@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
+using Schema = System.ComponentModel.DataAnnotations.Schema;
 
 namespace ManagingTasksCategoriesBugrina.Models
 {
